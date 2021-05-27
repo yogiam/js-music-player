@@ -113,6 +113,7 @@ body {
     padding:10px 10px 10px 150px; 
     transform: translateY(0%);
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    overflow: hidden;
 }
 
 .music-info h4 {
@@ -139,4 +140,21 @@ body {
     height: 100%;
     width: 0%;
     transition: width 0.1s linear;
+}
+
+#title {
+    overflow: hidden;
+    /* background-color: aqua; */
+    text-align: center;
+    animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-160%);
+    }
+    
 }
